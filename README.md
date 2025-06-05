@@ -54,7 +54,7 @@ Django REST Framework
 
 # Instalación y Configuración
 1. Clonar el Repositorio
-bashgit clone <url-del-repositorio>
+git clone <https://github.com/Pablo-pelaez/biblioteca-django>
 cd BIBLIOTECA
 2. Crear Entorno Virtual
 bash# En Windows
@@ -86,3 +86,5 @@ Variables de Entorno
 Para producción, configura las siguientes variables de entorno:
 SECRET_KEY=django-key-2025
 DEBUG=True
+admin-user=juanp
+password=jpw123456
