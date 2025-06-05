@@ -146,7 +146,7 @@ class PrestarLibroView(UsuarioRegularRequiredMixin, View):
         )
         
         messages.success(request, f'Has tomado prestado "{libro.titulo}" exitosamente.')
-        return redirect('libros:mis_prestamos')
+        return redirect('libros:mis_prestamos')#xd
 
 
 class DevolverLibroView(UsuarioRegularRequiredMixin, View):
@@ -194,3 +194,4 @@ class RegisterView(CreateView):
         login(self.request, self.object)
         messages.success(self.request, 'Te has registrado exitosamente.')
         return response
+    

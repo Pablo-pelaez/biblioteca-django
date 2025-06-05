@@ -1,41 +1,11 @@
-
-__pycache__/
-*.py[cod]
-*$py.class
-
-*.so
-
-*.log
-*.pot
+# Entorno virtual
+biblioteca_env/
 *.pyc
-db.sqlite3
-media/
-staticfiles/
-local_settings.py
+__pycache__/
 
-
-
-.env
+# Archivos de configuración
 *.env
 
-# VSCode / IDEs / OS
+# VSCode / IDEs
 .vscode/
 .idea/
-*.swp
-.DS_Store
-Thumbs.db
-
-# Virtualenv
-venv/
-env/
-ENV/
-
-
-pip-wheel-metadata/
-__pypackages__/
-
-
-htmlcov/
-.coverage
-.tox/
-.pytest_cache/
