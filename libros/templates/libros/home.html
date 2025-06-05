@@ -1,0 +1,21 @@
+{% extends "libros/home.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <h1>Bienvenido a la Biblioteca</h1>
+    <p>Total de libros: {{ total_libros }}</p>
+    <p>Libros disponibles: {{ libros_disponibles }}</p>
+    <p>Préstamos activos: {{ prestamos_activos }}</p>
+
+    <h3 class="mt-4">Libros más recientes</h3>
+    <ul class="list-group">
+        {% for libro in libros_recientes %}
+            <li class="list-group-item">{{ libro.titulo }} - {{ libro.autor }}</li>
+        {% empty %}
+            <li class="list-group-item">No hay libros recientes.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
